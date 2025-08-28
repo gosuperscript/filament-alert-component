@@ -1,7 +1,7 @@
 .fi-super-alert {
-    @apply rounded-lg;
-    @apply p-4;
-    @apply flex;
+    @apply flex rounded-lg p-4;
+
+    color: var(--text);
 
     &.fi-color {
         background-color: var(--bg);
@@ -10,8 +10,6 @@
 
     .fi-super-alert-text {
         @apply grid gap-1 ml-3;
-
-        color: var(--text);
 
         .fi-super-alert-heading {
             @apply font-medium;
