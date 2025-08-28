@@ -1,0 +1,20 @@
+.fi-super-alert {
+    @apply rounded-lg;
+    @apply p-4;
+    @apply flex;
+
+    &.fi-color {
+        background-color: var(--bg);
+        --bg: var(--color-50);
+    }
+
+    .fi-super-alert-text {
+        @apply grid gap-1 ml-3;
+
+        color: var(--text);
+
+        .fi-super-alert-heading {
+            @apply font-medium;
+        }
+    }
+}
