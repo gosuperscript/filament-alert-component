@@ -1,0 +1,11 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "npx tailwindcss -i ./resources/css/index.css -o ./resources/dist/filament-alert-component.css --minify"
+    },
+    "devDependencies": {
+        "esbuild": "^0.25.5",
+        "prettier": "^3.5.3"
+    }
+}

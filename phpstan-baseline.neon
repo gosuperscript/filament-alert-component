@@ -1,0 +1,7 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Property Superscript\\FilamentAlertComponent\\Schema\\Components\\Alert\:\:\$view \(view\-string\) does not accept default value of type string\.$#'
+			identifier: property.defaultValue
+			count: 1
+			path: src/Schema/Components/Alert.php
