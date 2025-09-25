@@ -2,13 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Superscript\FilamentAlertComponent\Schema\Components;
+namespace Superscript\FilamentAlertComponent\Infolists\Components;
 
 use Closure;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Concerns\HasDescription;
-use Filament\Schemas\Components\Concerns\HasHeading;
+use Filament\Infolists\Components\Component;
+use Filament\Support\Concerns\HasDescription;
+use Filament\Support\Concerns\HasHeading;
 use Illuminate\Contracts\Support\Htmlable;
+use Superscript\FilamentAlertComponent\Support\HasColor;
+use Superscript\FilamentAlertComponent\Support\HasIcon;
+use Superscript\FilamentAlertComponent\Support\HasStatus;
 
 final class Alert extends Component
 {

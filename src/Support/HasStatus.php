@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Superscript\FilamentAlertComponent\Schema\Components;
+namespace Superscript\FilamentAlertComponent\Support;
 
 use Closure;
 

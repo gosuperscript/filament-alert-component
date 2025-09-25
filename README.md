@@ -15,8 +15,20 @@ composer require gosuperscript/filament-alert-component
 
 ## Usage
 
+### Forms
+
 ```php
-use \Superscript\FilamentAlertComponent\Schema\Components\Alert;
+use Superscript\FilamentAlertComponent\Forms\Components\Alert;
+
+Alert::make('This is the heading!')
+    ->description('This is the description...')
+    ->warning();
+```
+
+### Infolists
+
+```php
+use Superscript\FilamentAlertComponent\Infolists\Components\Alert;
 
 Alert::make('This is the heading!')
     ->description('This is the description...')
