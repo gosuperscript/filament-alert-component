@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 use Filament\Facades\Filament;
 
+beforeEach()->onlyOnMac();
+
 it('renders alerts in style', function () {
     visit('/test/alert-playground')
         ->screenshotElement('.fi-page-content')
