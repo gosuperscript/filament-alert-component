@@ -1,6 +1,6 @@
 @php
     use Filament\Support\Enums\IconSize;
-    use Filament\Support\View\Components\BadgeComponent;
+    use Superscript\FilamentAlertComponent\View\Components\AlertComponent;
     use function Filament\Support\generate_icon_html;
 
     $color = $getColor();
@@ -13,7 +13,7 @@
 
 <div {{ $attributes->class([
     'fi-super-alert'
-])->color(BadgeComponent::class, $color) }}>
+])->color(AlertComponent::class, $color) }}>
     @if ($icon)
         <div>
             {{ generate_icon_html($icon, size: IconSize::Medium) }}
