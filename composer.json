@@ -53,7 +53,11 @@
         "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
         "analyse": "phpstan analyse",
         "lint": "pint",
-        "test": "pest",
+        "build": "npm run build",
+        "test": [
+            "@build",
+            "vendor/bin/testbench filament:install --no-interaction && vendor/bin/pest"
+        ],
         "test:lint": "pint --test"
     },
     "extra": {
