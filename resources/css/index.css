@@ -1,3 +1,5 @@
 @reference "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @import './components/alert.css';
