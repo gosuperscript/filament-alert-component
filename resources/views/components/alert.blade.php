@@ -11,7 +11,7 @@
     $actions = $getActions();
 @endphp
 
-<div {{ $attributes->class([
+<div {{ $attributes->merge($getExtraAttributes(), escape: false)->class([
     'fi-super-alert'
 ])->color(BadgeComponent::class, $color) }}>
     @if ($icon)
